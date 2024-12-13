@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseña tu Skate</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Diseña tu Skate</h1>
+        <form id="designForm">
+            <label for="text">Texto:</label>
+            <input type="text" id="text" name="text" required>
+
+            <label for="font">Fuente:</label>
+            <select id="font" name="font">
+                <option value="Arial">Arial</option>
+                <option value="Courier New">Courier New</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Verdana">Verdana</option>
+                <option value="Sprite Graffiti">Sprite Graffiti</option>
+            </select>
+
+            <label for="color">Color del Texto:</label>
+            <input type="color" id="color" name="color" value="#000000">
+
+            <button type="submit">Guardar Diseño</button>
+        </form>
+        <canvas id="canvas" width="600" height="300"></canvas>
+        <button id="viewSkatesBtn">Ver Todas las Patinetas</button>
+        <div id="gallery"></div>
+    </div>
+
+    <!-- Modal para Editar -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <form id="editForm">
+                <label for="editText">Texto:</label>
+                <input type="text" id="editText" name="editText" required>
+
+                <label for="editFont">Fuente:</label>
+                <select id="editFont" name="editFont">
+                    <option value="Arial">Arial</option>
+                    <option value="Courier New">Courier New</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                    <option value="Verdana">Verdana</option>
+                    <option value="Sprite Graffiti">Sprite Graffiti</option>
+                </select>
+
+                <label for="editColor">Color del Texto:</label>
+                <input type="color" id="editColor" name="editColor" value="#000000">
+
+                <button type="submit">Actualizar Diseño</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
+

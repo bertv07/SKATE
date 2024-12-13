@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Patinetas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Galería de Patinetas</h1>
+        <div id="allSkatesGallery"></div>
+        <a href="index.html">Volver al Diseño</a>
+
+        <!-- Modal para Editar -->
+        <div id="editModal" class="modal">
+            <div class="modal-content">
+                <span id="closeModal" class="close">&times;</span>
+                <form id="editForm">
+                    <label for="editText">Texto:</label>
+                    <input type="text" id="editText" name="editText" required>
+
+                    <label for="editFont">Fuente:</label>
+                    <select id="editFont" name="editFont">
+                        <option value="Arial">Arial</option>
+                        <option value="Courier New">Courier New</option>
+                        <option value="Georgia">Georgia</option>
+                        <option value="Times New Roman">Times New Roman</option>
+                        <option value="Verdana">Verdana</option>
+                        <option value="Sprite Graffiti">Sprite Graffiti</option>
+                    </select>
+
+                    <label for="editColor">Color del Texto:</label>
+                    <input type="color" id="editColor" name="editColor" value="#000000">
+
+                    <button type="submit">Actualizar Diseño</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="skates.js"></script>
+</body>
+</html>
